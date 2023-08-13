@@ -20,12 +20,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         prefs = this.getSharedPreferences("theme", Context.MODE_PRIVATE);
-
-        if(!prefs.getBoolean("FirstScreen", false)){
-            Intent intent = new Intent(this, FirstScreen.class);
-            startActivity(intent);
-            prefs.edit().putBoolean("FirstScreen", true).apply();
-        }
+        Intent intent = new Intent(this, FirstScreen.class);
+        startActivity(intent);
+//        if(!prefs.getBoolean("FirstScreen", false)){
+//            Intent intent = new Intent(this, FirstScreen.class);
+//            startActivity(intent);
+//            prefs.edit().putBoolean("FirstScreen", true).apply();
+//        }
 
 
 

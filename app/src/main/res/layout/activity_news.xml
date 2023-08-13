@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityMap"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <ListView
+        android:id="@+id/lvMain"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:layout_weight="1"
+        android:dividerHeight="10dp"
+        android:layout_marginHorizontal="30dp">
+    </ListView>
+    <Button
+        android:id="@+id/bac"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="добавить статью"
+        android:layout_marginHorizontal="20dp"
+        android:background="@color/green"
+        android:layout_marginBottom="30dp"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageButton
+            android:id="@+id/map_3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@color/white"
+            android:layout_marginHorizontal="10dp"
+            android:src="@drawable/baseline_map_24" />
+        <ImageButton
+            android:id="@+id/event_3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="@color/white"
+            android:src="@drawable/baseline_calendar_today_24" />
+
+        <ImageButton
+
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@color/white"
+            android:layout_marginHorizontal="10dp"
+            android:src="@drawable/baseline_article_24" />
+
+        <ImageButton
+            android:id="@+id/akk_3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@color/white"
+            android:layout_marginHorizontal="10dp"
+            android:src="@drawable/baseline_people_alt_24" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

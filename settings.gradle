@@ -2,7 +2,12 @@ pluginManagement {
     repositories {
         gradlePluginPortal()
         google()
+
         mavenCentral()
+        maven {
+            url "http://oss.sonatype.org/content/repositories/snapshots"
+            allowInsecureProtocol = true
+        }
     }
 }
 dependencyResolutionManagement {
